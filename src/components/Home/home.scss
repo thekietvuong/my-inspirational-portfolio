@@ -1,0 +1,195 @@
+.home{
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    background: #e0e0e0;
+    .section1{
+        height: 100vh;
+        background: white;
+        h1{
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 1rem;
+            font-family: 'Poiret One', cursive;
+            white-space: nowrap;
+            color: #2e2e2e;
+            z-index: 1000;
+        }
+        img{
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg);
+            font-family: 'Montserrat', sans-serif;
+            padding: 1rem;
+            color: #2e2e2e;
+            z-index: 1000;
+        }
+    }
+    .section2{
+        img{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            z-index: 1;
+        }
+        .text-at-bottom{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: 600;
+            color: #ffffff;
+            z-index: 10;
+            p{
+                letter-spacing: .2rem;
+                .icon{
+                    animation: bouncing .6s ease-in-out;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+                @keyframes bouncing{
+                    from{transform: translateY(10px);}
+                    to{transform: translateY(-10px);}
+                }
+            }
+        }
+    }
+}
+
+//Iphone
+@media screen and (max-width: 350px){
+    .section1{
+        h1{
+            font-size: .8rem;
+            letter-spacing: .2rem;
+        }
+        img{
+            height: 15rem;
+        }
+    }
+    .section2{
+        img{
+            height: 30%;
+        }
+        .text-at-bottom{
+            bottom: 4rem;
+            p{
+                font-size: .8rem;
+            }
+            span{
+                font-size: .5rem;
+                letter-spacing: .1rem;
+            }
+        }
+    }
+}
+//Iphone
+@media screen and (min-width: 351px) and (max-width: 599px){
+    .section1{
+        h1{
+            font-size: .8rem;
+            letter-spacing: .2rem;
+        }
+        img{
+            height: 25rem;
+        }
+    }
+    .section2{
+        img{
+            height: 30%;
+        }
+        .text-at-bottom{
+            bottom: 4rem;
+            p{
+                font-size: 1rem;
+            }
+            span{
+                font-size: .6rem;
+                letter-spacing: .1rem;
+            }
+        }
+    }
+}
+//Ipad and small tablet 
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    .section1{
+        h1{
+            font-size: 1.2rem;
+            letter-spacing: .6rem;
+        }
+        img{
+            height: 30rem;
+        }
+    }
+    .section2{
+        img{
+            height: 45%;
+        }
+        .text-at-bottom{
+            bottom: 6rem;
+            p{
+                font-size: 1.6rem;
+            }
+            span{
+                font-size: .8rem;
+                letter-spacing: .3rem;
+            }
+        }
+    }
+}
+// Ipad pro 
+@media screen and (min-width: 1023px) and (max-width: 1919px){
+    .section1{
+        h1{
+            font-size: 1.8rem;
+            letter-spacing: .8rem;
+        }
+        img{
+            height: 40rem;
+        }
+    }
+    .section2{
+        img{
+            height: 45%;
+        }
+        .text-at-bottom{
+            bottom: 6rem;
+            p{
+                font-size: 2rem;
+            }
+            span{
+                font-size: .8rem;
+                letter-spacing: .3rem;
+            }
+        }
+    }
+}
+//desktop 
+@media screen and (min-width: 1920px){
+    .section1{
+        h1{
+            font-size: 2rem;
+            letter-spacing: 1rem;
+        }
+        img{
+            height: 40rem;
+        }
+    }
+    .section2{
+        img{
+            height: 50%;
+        }
+        .text-at-bottom{
+            bottom: 6rem;
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap');
+.project-content{
+    position: relative;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    line-height: 200%;
+    color: rgb(70, 70, 70);
+    .intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            padding-left: 1rem;
+        }
+        .text{
+            span{
+                font-weight: bolder;
+                font-size: larger;
+                font-family: 'Poiret One', cursive;
+            }
+            p{
+                font-weight: 600;
+                font-family: 'Poiret One', cursive;
+            }
+        }
+    }
+    .projects{
+        margin-top: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .project{
+            margin: 2rem;
+        }
+    }
+}
+
+//Iphone
+@media screen and (max-width: 600px){
+    .intro{
+        flex-direction: column;
+        margin: 5rem 1rem;
+        .logo{
+            height: 10rem;
+        }
+        .text{
+            margin-left: 1rem;
+            text-align: center;
+        }
+    }
+    .projects{
+        flex-direction: column;
+    }
+}
+
+//Ipad and small tablet 
+// @media screen and (min-width: 601px) and (max-width: 1023px){
+//     .intro{
+//         margin: 0 5rem;
+//         .logo{
+//             height: 15rem;
+//         }
+//         .text{
+//             margin-left: 1rem;
+//             text-align: left;
+//         }
+//     }
+//     .projects{
+//         flex-direction: column;
+//     }
+// }
+// Ipad and small tablet 
+@media screen and (min-width: 601px) and (max-width: 1919px){
+    .intro{
+        margin: 0 5rem;
+        .logo{
+            height: 15rem;
+        }
+        .text{
+            margin-left: 1rem;
+            text-align: left;
+        }
+    }
+    .projects{
+        flex-direction: column;
+    }
+}
+
+//desktop 
+@media screen and (min-width: 1920px){
+    .intro{
+        margin: 0 2rem;
+        .logo{
+            height: 15rem;
+        }
+        .text{
+            margin-left: 5rem;
+            text-align: left;
+        }
+    }
+    .projects{
+        flex-direction: row;
+    }
+}

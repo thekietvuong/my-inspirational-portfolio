@@ -1,0 +1,86 @@
+.about{
+    position: relative;
+    width: 100vw;
+    .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-weight: 600;
+        font-family: 'Poiret One', cursive;
+        color: black;
+        img{
+            text-align: center;
+            height: 10rem;
+            border-radius: 50%;
+        }
+        .paragraph{
+            text-align: left;
+        }
+        .info{
+            text-align: right;
+            .name{
+                font-family: 'Montserrat', cursive;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+//Iphone
+@media screen and (max-width: 350px){
+    .about{
+        height: 180vh;
+        .content{
+            width: 15rem;
+            font-size: .8rem;
+            line-height: 180%;
+        }
+    }
+}
+//Iphone
+@media screen and (min-width: 351px) and (max-width: 599px){
+    .about{
+        height: 140vh;
+        .content{
+            width: 18rem;
+            font-size: .8rem;
+            line-height: 180%;
+        }
+    }
+}
+//Ipad and small tablet 
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    .about{
+        height: 120vh;
+        .content{
+            width: 30rem;
+            font-size: .8rem;
+            line-height: 180%;
+        }
+    }
+}
+// Ipad pro 
+@media screen and (min-width: 1023px) and (max-width: 1919px){
+    .about{
+        height: 100vh;
+        .content{
+            width: 45rem;
+            font-size: .9rem;
+            line-height: 200%;
+        }
+    }
+}
+
+//desktop 
+@media screen and (min-width: 1920px){
+    .about{
+        height: 100vh;
+        .content{
+            width: 50rem;
+            font-size: .9rem;
+            line-height: 200%;
+        }
+    }
+}

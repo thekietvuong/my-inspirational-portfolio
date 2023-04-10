@@ -1,0 +1,17 @@
+.back-to-top{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1000;
+    .button{
+        background: none;
+        border: none;
+        .icon{
+            font-size: 2rem;
+            color: #2e2e2e;
+        }
+        .icon:hover{
+            cursor: pointer;
+        }
+    }
+}

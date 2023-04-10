@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap');
+.navbar{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 2.5rem;
+  color: #2e2e2e;
+  background: white;
+  
+  h1{
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .nav-menu{
+    display: flex;
+    margin-right: 5rem;
+    .nav-link{
+      margin: 0px 1rem;
+      font-family: Montserrat;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      color: #2e2e2e;
+      .nav-item{
+        cursor: pointer;
+      }
+    }
+  }
+  .nav-btn{
+    color: #2e2e2e;
+    border: none;
+    background: none;
+  }
+  .nav-close-btn{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    margin-right: 0;
+  }
+  .nav-btn:hover{
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .nav-menu{
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: -100vh; 
+    gap: 2rem;
+    opacity: 0;
+    background: white; 
+    transition: all .6s ease-in-out;
+    .nav-link{
+      font-size: 1.5rem;
+    }
+  }
+  .responsive_nav{
+    top: 0;
+    opacity: 1;
+    transition: all .6s ease-in-out;
+  }
+
+  .nav-btn{
+    display: initial;
+  }
+  @media screen and (max-width: 599px){
+    .intro{
+      font-size: .8rem;
+      letter-spacing: 0rem;
+    }
+    .nav-btn{
+      font-size: .8rem;
+      margin-right: 1.5rem;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 1023px){
+    .intro{
+      font-size: 1rem;
+      letter-spacing: .1rem;
+    }
+    .nav-btn{
+      font-size: 1rem;
+      margin-right: 5%;
+    }
+  }
+}
+
+@media screen and (min-width: 1023px){
+  .navbar{
+    .intro{
+      font-size: 1.2rem;
+      letter-spacing: .2rem;
+    }
+  }
+  .nav-menu{
+    flex-direction: row;
+    justify-content: space-around;
+    .nav-link{
+      font-size: .8rem;
+    }
+  }
+  .nav-btn{
+    display: none;
+  }
+}

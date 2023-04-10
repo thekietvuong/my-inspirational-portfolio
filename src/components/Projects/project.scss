@@ -1,0 +1,265 @@
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .background{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20rem;
+        border: solid 1px #e4e4e4;
+        overflow: hidden;
+        img{
+            width: 100%;
+            z-index: 10;
+            transition: width .6s ease-in-out;
+        }
+        
+        .click-me-mate{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: black;
+            opacity: .3;
+            z-index: 11;
+        }
+        .click-me{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poiret One', cursive;
+            font-weight: bold;
+            font-size: 1.5rem;
+            height: 7rem;
+            width: 7rem;
+            color: #2e2e2e;
+            background: white;
+            border-radius: 50%;
+            z-index: 12;
+        }
+    }
+    .background:hover{
+        cursor: pointer;
+        img{
+            width: 120%;
+            transition: width .6s ease-in-out;
+        }
+    }
+    .title{
+        font-weight: 600;
+    }
+    .detail{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        font-family: "Montserrat";
+        font-weight: 600;
+        z-index: 10000;
+        transition: all .6s ease-in-out;
+        .mate{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: black;
+            opacity: .5;
+        }
+        .project-card{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: .5rem;
+            background: white;
+            button{
+                position: fixed;
+                top: 1rem;
+                right: 1rem;
+                font-family: "Montserrat";
+                color: #2e2e2e;
+                border: none;
+                background: none;
+            }
+            button:hover{
+                cursor: pointer;
+                opacity: .8;
+            }
+            .title-detail{
+                text-align: center;
+                font-size: smaller;
+            }
+            .content{
+                position: absolute;
+                bottom: 0;
+                overflow-y: scroll;
+                line-height: 200%;
+            }
+            .youtube-link{
+                .icon{
+                    color: rgb(255, 52, 52);
+                    margin-right: .5rem;
+                }
+                text-decoration: none;
+                color: #2e2e2e;
+            }
+            .youtube-link:hover{
+                opacity: .8;
+                cursor: pointer;
+            }
+            .github-link{
+                text-decoration: none;
+                color: #2e2e2e;
+                .github-icon{
+                    margin-right: .5rem;
+                }
+            }
+            .github-link:hover{
+                opacity: .8;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//Iphone
+@media screen and (max-width: 350px){
+    .project{
+        height: 18rem;
+        width: 16rem;
+        .project-card{
+            width: 15rem;
+            height: 30rem;
+            img{
+                width: 100%;
+            }
+            h2{
+                font-size: smaller;
+            }
+            .content{
+                height: 45%;
+                font-size: .6rem;
+                p{
+                    margin: 1rem .5rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+//Iphone
+@media screen and (min-width: 351px) and (max-width: 599px){
+    .project{
+        height: 18rem;
+        width: 16rem;
+
+        .project-card{
+            width: 20rem;
+            height: 30rem;
+            img{
+                height: 9rem;
+            }
+            h2{
+                font-size: smaller;
+            }
+            .content{
+                height: 45%;
+                font-size: .7rem;
+                
+                p{
+                    margin: 1rem 1rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+//Ipad and small tablet 
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    .project{
+        height: 22rem;
+        width: 20rem;
+
+        .project-card{
+            width: 30rem;
+            height: 40rem;
+            img{
+                height: 12rem;
+            }
+            h2{
+                font-size: medium;
+            }
+            .content{
+                height: 50%;
+                font-size: .8rem;
+                
+                p{
+                    margin: 1rem 1.5rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+// Ipad pro 
+@media screen and (min-width: 1023px) and (max-width: 1919px){
+    .project{
+        height: 22rem;
+        width: 20rem;
+
+        .project-card{
+            width: 50rem;
+            height: 50rem;
+            img{
+                height: 17rem;
+            }
+            h2{
+                font-size: large;
+            }
+            .content{
+                height: 50%;
+                font-size: 1rem;
+                
+                p{
+                    margin: 1rem 2rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+//desktop 
+@media screen and (min-width: 1920px){
+    .project{
+        height: 22rem;
+        width: 20rem;
+
+        .project-card{
+            width: 50rem;
+            height: 50rem;
+            img{
+                height: 17rem;
+            }
+            h2{
+                font-size: large;
+            }
+            .content{
+                height: 50%;
+                font-size: 1rem;
+                
+                p{
+                    margin: 1rem 2rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
